@@ -22,8 +22,9 @@ public class audience
 {
     // all types, the float representing how much they like it
     private Dictionary<string, float> preferences;
+    // purely visual, derived from preferences
     private int[] ageBracket;
-    // represents how inpactful each joke is on the laughometer
+    // represents how inpactful each joke is on the laughometer; has to do with how diverse the crowd is
     // low propensity = lower impact on laughometer
     // high probensity = higher impact on laughometer
     // should only be 0-1

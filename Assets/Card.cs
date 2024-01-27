@@ -6,7 +6,7 @@ using UnityEngine.EventSystems;
 
 public class Card : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
 {
-    /*
+    
     string cardName;
     string cardSuit;
     string cardType;
@@ -47,5 +47,5 @@ public class Card : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
         mouse_over = false;
         Debug.Log("Mouse exit");
     }
-    */
+    
 }
