@@ -11,13 +11,6 @@ public class Card : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
     string cardSuit;
     string cardType;
     string cardAbility;
-
-    Card(string name; string suit; string type; string ability){
-        cardName = name;
-        cardSuit = suit;
-        cardType = type;
-        cardAbility = ability;
-    }
     
     // Start is called before the first frame update
     void Start()
