@@ -2,12 +2,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using CardManager;
 
 public class GameManager : MonoBehaviour
 {
     // Start is called before the first frame update
     // When game starts, go to first state
+    /*
     void Start() => ChangeState(GameState.Starting);
 
     public void ChangeState(GameState newState){
@@ -19,20 +19,20 @@ public class GameManager : MonoBehaviour
                 break;
             case GameState.BeginTurn:
                 break;
-            case GameState.PlayCard;
+            case GameState.PlayCard:
                 break;
             case GameState.EndPlaying:
                 break;
         }
     }
+    */
 
     private void HandleStarting(){
         // spawn audience, cards, background
 
-        audience * currentAud = audienceFactory();
-        
-        
-        if()
+        int levelofAudience = 0;
+        //TODO; map audience level to something
+        Audience currentAud = audienceFactory(levelofAudience);
 
         ChangeState();
     }

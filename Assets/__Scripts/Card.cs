@@ -26,12 +26,14 @@ public class Card : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
 
     public void OnPointerEnter(PointerEventData eventData)
     {
+        transform.Translate(0,0,2);
         mouse_over = true;
         Debug.Log("Mouse enter");
     }
 
     public void OnPointerExit(PointerEventData eventData)
     {
+        transform.Translate(0,0,-2);
         mouse_over = false;
         Debug.Log("Mouse exit");
     }
