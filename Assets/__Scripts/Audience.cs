@@ -3,6 +3,7 @@ using System;
 using System.Collections.Generic;
 using UnityEngine;
 
+// make sure to finish adding these
 const string[] types = [
     "crude",
     "political",
