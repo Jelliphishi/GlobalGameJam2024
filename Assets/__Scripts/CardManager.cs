@@ -10,11 +10,7 @@ public class CardManager : MonoBehaviour
     public Transform[] cardSlots;
     public bool[] availableCardSlots;
 
-    public Text deckSizeText;
-
-    public int size() {
-        return deck.size();
-    }
+    public TextMeshProUGUI deckSizeText;
 
     public void DrawCard()
     {
