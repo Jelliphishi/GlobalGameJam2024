@@ -6,10 +6,14 @@ using UnityEngine.UI;
 public class Laughometer : MonoBehaviour
 {
     // Start is called before the first frame update
-    //public Gradient gradient;
     public Slider slider;
+    public int maxLaughter = 100;
     public int currentLaughter;
-   public void setLaughingness(int laughingness){
-        slider.value = laughingness;
+
+    void Start(){
+        currentLaughter = 50;
+    }
+   public void setLaughingness(int health){
+        slider.value = health;
    }
 }

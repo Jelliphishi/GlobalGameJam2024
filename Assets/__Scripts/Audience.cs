@@ -86,7 +86,7 @@ public class audience
 public audience * audienceFactory(int audienceLevel){
     Dictionary<string, float> preferences;
 
-    for (string type in types){
+    for (string type : types){
         preferences[type] = (Random.Range(0,15)/15.0);
     }
 
