@@ -4,13 +4,17 @@ using UnityEngine;
 using TMPro;
 using UnityEngine.UI;
 
-public class GameManager : MonoBehaviour
+public class CardManager : MonoBehaviour
 {
     public List<Card> deck = new List<Card>();
     public Transform[] cardSlots;
     public bool[] availableCardSlots;
 
     public Text deckSizeText;
+
+    public int size() {
+        return deck.size();
+    }
 
     public void DrawCard()
     {

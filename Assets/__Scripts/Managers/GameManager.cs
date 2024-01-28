@@ -2,6 +2,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using CardManager;
 
 public class GameManager : MonoBehaviour
 {
@@ -16,9 +17,9 @@ public class GameManager : MonoBehaviour
             case GameState.Starting:
                 HandleStarting();
                 break;
-            case GameState.Playing:
+            case GameState.BeginTurn:
                 break;
-            case GameState.Shop:
+            case GameState.PlayCard;
                 break;
             case GameState.EndPlaying:
                 break;
@@ -27,6 +28,12 @@ public class GameManager : MonoBehaviour
 
     private void HandleStarting(){
         // spawn audience, cards, background
+
+        audience * currentAud = audienceFactory();
+        
+        
+        if()
+
         ChangeState();
     }
     // Update is called once per frame
