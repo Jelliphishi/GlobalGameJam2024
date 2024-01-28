@@ -35,7 +35,5 @@ public class Card : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
         mouse_over = false;
         Debug.Log("Mouse exit");
     }
-
-    public 
     
 }
