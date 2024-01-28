@@ -986,7 +986,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1829737878}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &911230270
 GameObject:
@@ -1795,7 +1795,7 @@ Transform:
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
-  m_Father: {fileID: 1829737878}
+  m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!82 &1758923671
 AudioSource:
@@ -1893,6 +1893,7 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+<<<<<<< Updated upstream
 --- !u!1001 &1829737877
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2045,6 +2046,8 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+=======
+>>>>>>> Stashed changes
 --- !u!1 &1894301609
 GameObject:
   m_ObjectHideFlags: 0
@@ -2236,4 +2239,5 @@ SceneRoots:
   - {fileID: 1931007156}
   - {fileID: 1114918688}
   - {fileID: 707096917}
-  - {fileID: 1829737877}
+  - {fileID: 909166723}
+  - {fileID: 1758923670}

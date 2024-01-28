@@ -1,5 +1,4 @@
 using System.Collections;
-using System;
 using System.Collections.Generic;
 using UnityEngine;
 
@@ -72,7 +71,7 @@ public class Audience : MonoBehaviour
 
 
         foreach(string type in types){
-            preferences[type] = (Random.Range(0,15)/15.0);
+            preferences[type] = (float)(Random.Range(0,15)/15.0);
         }
 
 
@@ -81,23 +80,27 @@ public class Audience : MonoBehaviour
         if(preferences["crude"] > 13.0/15){
             ageBracket[0] = 12;
             ageBracket[1] = 18;
-        }else if(preferences["risky"] > 13.0/15){
+        }
+        else if(preferences["risky"] > 13.0/15){
             ageBracket[0] = 19;
             ageBracket[1] = 25;
-        }else if(preferences["political"] > 13.0/15){
+        }
+        else if(preferences["political"] > 13.0/15){
             ageBracket[0] = 26;
             ageBracket[1] = 35;
-        }else if(preferences["satire"] > 13.0/15){
+        }
+        else if(preferences["satire"] > 13.0/15){
             ageBracket[0] = 36;
             ageBracket[1] = 50;
-        }else{
+        }
+        else{
             preferences["pun"] = Random.Range(13,15);
             ageBracket[0] = 51;
             ageBracket[1] = 100;
         }
         // propensity is random
         // Maybe can show "diversity of crowd"
-        int propensity = Random.Range(0.5,1);
+        float propensityInput = (float) Random.Range(1/2,1);
         // start at the middle
         int laughingness = 50;
         int members;
@@ -115,25 +118,31 @@ public class Audience : MonoBehaviour
         mean = 40;
         }
         */
-        NormalDistribution audDistribution = NormalDistribution(mean, mean*.4);
+        NormalDistribution audDistribution = new NormalDistribution(mean, mean*.4);
         members = static_cast<int>(audDistribution.Sample());
         int wealth;
+        
         if(preferences["crude"] > 10.0){
             wealth = 1;
-        }else if(preferences["physical"] > 10.0){
+        }
+        else if(preferences["physical"] > 10.0){
             wealth = 5;
-        }else if(preferences["one liner"] > 10.0){
+        }
+        else if(preferences["one liner"] > 10.0){
             wealth = 4;
-        }else if(preferences["nerdy"] > 10.0){
+        }
+        else if(preferences["nerdy"] > 10.0){
             wealth = 3;
-        }else{
+        }
+        else{
             preferences["political"] = Random.Range(10, 15.0);
         }
-            return new Audience(preferences_in, ageBracket, propensity, laughingness, members, wealth);
-        }
+        
+        return new Audience(preferences_in, ageBracket, propensityInput, laughingness, members, wealth);
+    }
 
 
-        public class NormalDistribution {
+    public class NormalDistribution {
         private double m_factor;
 
 
@@ -165,8 +174,7 @@ public class Audience : MonoBehaviour
         /// /summary
         /// param name="rnd">Generator for a random varible between 0-1 (inculsive)/param
         /// returns A value from the distribution/returns
-        public double Sample()
-        {
+        public double Sample(){
             System.Random rnd = new System.Random();
             double x1, x2, w, y1;
 

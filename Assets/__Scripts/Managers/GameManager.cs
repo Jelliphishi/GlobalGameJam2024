@@ -32,9 +32,10 @@ public class GameManager : MonoBehaviour
 
         int levelofAudience = 0;
         //TODO; map audience level to something
-        Audience currentAud = audienceFactory.create(levelofAudience);
+        audienceFactory af = new audienceFactory();
+        Audience currentAud = af.create(levelofAudience);
 
-        ChangeState();
+        //TODO: ChangeState();
     }
     // Update is called once per frame
     void Update()
@@ -43,10 +44,17 @@ public class GameManager : MonoBehaviour
     }
 }
 
-public class audienceFactor{
+public class audienceFactory{
     // audience level is an int from 1-5
     public Audience create(int audienceLevel){
         Dictionary<string, float> preferences;
+
+        string[] types = {
+        "crude",
+        "political",
+        "pun",
+        "satire"
+        };
 
         foreach(string type in types){
             preferences[type] = (Random.Range(0,15)/15.0);
@@ -56,16 +64,20 @@ public class audienceFactor{
         if(preferences["crude"] > 13.0/15){
             ageBracket[0] = 12;
             ageBracket[1] = 18;
-        }else if(preferences["risky"] > 13.0/15){
+        }
+        else if(preferences["risky"] > 13.0/15){
             ageBracket[0] = 19;
             ageBracket[1] = 25;
-        }else if(preferences["political"] > 13.0/15){
+        }
+        else if(preferences["political"] > 13.0/15){
             ageBracket[0] = 26;
             ageBracket[1] = 35;
-        }else if(preferences["satire"] > 13.0/15){
+        }
+        else if(preferences["satire"] > 13.0/15){
             ageBracket[0] = 36;
             ageBracket[1] = 50;
-        }else{
+        }
+        else{
             preferences["pun"] = Random.Range(13,15);
             ageBracket[0] = 51;
             ageBracket[1] = 100;

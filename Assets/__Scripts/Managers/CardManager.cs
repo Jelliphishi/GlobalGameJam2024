@@ -13,7 +13,7 @@ public class CardManager : MonoBehaviour
     public Text deckSizeText;
 
     public int size() {
-        return deck.size();
+        return deck.Count;
     }
 
     public void DrawCard()
