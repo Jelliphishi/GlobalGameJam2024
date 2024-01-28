@@ -388,6 +388,7 @@ MonoBehaviour:
   - {fileID: 235391975}
   availableCardSlots: 0101010101
   deckSizeText: {fileID: 0}
+<<<<<<< Updated upstream
 --- !u!1 &558204486
 GameObject:
   m_ObjectHideFlags: 0
@@ -521,6 +522,8 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 558204486}
   m_CullTransparentMesh: 1
+=======
+>>>>>>> Stashed changes
 --- !u!1 &697498956
 GameObject:
   m_ObjectHideFlags: 0
@@ -732,8 +735,13 @@ Canvas:
   m_GameObject: {fileID: 715481220}
   m_Enabled: 1
   serializedVersion: 3
+<<<<<<< Updated upstream
   m_RenderMode: 1
   m_Camera: {fileID: 793619310}
+=======
+  m_RenderMode: 0
+  m_Camera: {fileID: 0}
+>>>>>>> Stashed changes
   m_PlaneDistance: 100
   m_PixelPerfect: 0
   m_ReceivesEvents: 1
@@ -759,7 +767,10 @@ RectTransform:
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 1756853580}
+<<<<<<< Updated upstream
   - {fileID: 558204487}
+=======
+>>>>>>> Stashed changes
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
@@ -828,7 +839,11 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
+<<<<<<< Updated upstream
   orthographic size: 5
+=======
+  orthographic size: 20
+>>>>>>> Stashed changes
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -927,6 +942,7 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+<<<<<<< Updated upstream
 --- !u!1 &1037212526
 GameObject:
   m_ObjectHideFlags: 0
@@ -1061,6 +1077,8 @@ CanvasRenderer:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1037212526}
   m_CullTransparentMesh: 1
+=======
+>>>>>>> Stashed changes
 --- !u!1 &1063225076
 GameObject:
   m_ObjectHideFlags: 0
@@ -2059,8 +2077,13 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
+<<<<<<< Updated upstream
   m_AnchoredPosition: {x: 233, y: -11}
   m_SizeDelta: {x: 163.9, y: 51.74}
+=======
+  m_AnchoredPosition: {x: -411.83, y: -202.69}
+  m_SizeDelta: {x: 18.8369, y: 6.618}
+>>>>>>> Stashed changes
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1756853581
 MonoBehaviour:
@@ -2109,10 +2132,17 @@ MonoBehaviour:
   m_faceColor:
     serializedVersion: 2
     rgba: 4294967295
+<<<<<<< Updated upstream
   m_fontSize: 40.15
   m_fontSizeBase: 36
   m_fontWeight: 400
   m_enableAutoSizing: 1
+=======
+  m_fontSize: 4
+  m_fontSizeBase: 4
+  m_fontWeight: 400
+  m_enableAutoSizing: 0
+>>>>>>> Stashed changes
   m_fontSizeMin: 18
   m_fontSizeMax: 72
   m_fontStyle: 0

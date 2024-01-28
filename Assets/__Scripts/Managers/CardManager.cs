@@ -12,9 +12,11 @@ public class CardManager : MonoBehaviour
 
     public Text deckSizeText;
 
+/*
     public int size() {
         return deck.size();
     }
+*/
 
     public void DrawCard()
     {
