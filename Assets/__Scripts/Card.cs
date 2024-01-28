@@ -7,11 +7,6 @@ using UnityEngine.EventSystems;
 public class Card : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
 {
     
-    string cardName;
-    string cardSuit;
-    string cardType;
-    string cardAbility;
-    
     // Start is called before the first frame update
     void Start()
     {
