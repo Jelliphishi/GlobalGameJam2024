@@ -6,7 +6,7 @@ using UnityEngine.EventSystems;
 
 public class Card : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
 {
-    
+    enum Suit {Repeat, Ready, Repute, Rely, Risky}
     // Start is called before the first frame update
     void Start()
     {
@@ -35,5 +35,7 @@ public class Card : MonoBehaviour, IPointerEnterHandler, IPointerExitHandler
         mouse_over = false;
         Debug.Log("Mouse exit");
     }
+
+    public 
     
 }
